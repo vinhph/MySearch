@@ -29,9 +29,13 @@ namespace MySearch.Models
         private IEnumerable<ProductTileViewModel> CreateProductViewModels(ISearchResults searchResult)
         {
             return searchResult.Documents.Select(x => new ProductTileViewModel() {
-                Title = "Title " + ((ISearchDocument)x).Value,
-                Content = "Content " + ((ISearchDocument)x).Value
+                Title = GetString(x, "Title"), //"Title " + ((ISearchDocument)x).Value,
+                Content = GetString(x, "Content") //"Content " + ((ISearchDocument)x).Value
             });
+        }
+        private static string GetString(ISearchDocument document, string name)
+        {
+            return document[name] != null ? document[name].Value.ToString() : "";
         }
         private CatalogEntrySearchCriteria CreateFullSearchCriteria(IContent currentContent, FilterOptionViewModel filterOptions)
         {

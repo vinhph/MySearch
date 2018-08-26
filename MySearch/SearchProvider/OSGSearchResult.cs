@@ -19,7 +19,11 @@ namespace MySearch.SearchProvider
             var searchDocuments = new SearchDocuments();
             foreach (var t in initData)
             {
-                var searchDocument = new SearchDocument() { Value = t.ToString() };
+                var searchDocument = new SearchDocument();
+                var fieldTitle = new SearchField("Title", $"Tieu de {t}");
+                searchDocument.Add(fieldTitle);
+                var fieldContent = new SearchField("Content", $"Noi dung {t}");
+                searchDocument.Add(fieldContent);
                 searchDocuments.Add((ISearchDocument)searchDocument);
             }
 

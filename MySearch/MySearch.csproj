@@ -54,12 +54,14 @@
     <Compile Include="Models\ISearchCriteria.cs" />
     <Compile Include="Models\ISearchDocument.cs" />
     <Compile Include="Models\ISearchDocuments.cs" />
+    <Compile Include="Models\ISearchField.cs" />
     <Compile Include="Models\ISearchResults.cs" />
     <Compile Include="Models\ISearchService.cs" />
     <Compile Include="Models\NodeContent.cs" />
     <Compile Include="Models\SearchDocument.cs" />
     <Compile Include="Models\SearchDocuments.cs" />
     <Compile Include="Models\SearchFacade.cs" />
+    <Compile Include="Models\SearchField.cs" />
     <Compile Include="Models\SearchService.cs" />
     <Compile Include="Models\SearchViewModel.cs" />
     <Compile Include="Models\ProductTileViewModel.cs" />
