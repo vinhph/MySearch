@@ -2,12 +2,12 @@
 
 namespace OSG.Search
 {
-    public class OSGSearchProvider : SearchProvider
+    public class OsgSearchProvider : SearchProvider
     {
         public override ISearchResults Search(string applicationName, ISearchCriteria criteria)
         {
-            var OSGSearchResults = new OSGSearchResult("ResultDataExample");
-            return (ISearchResults)OSGSearchResults;
+            var osgSearchResults = new OSGSearchResult("ResultDataExample");
+            return (ISearchResults)osgSearchResults;
         }
     }
 }
