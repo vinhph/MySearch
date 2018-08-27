@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EPiServer.Search;
 
 namespace MySearch.Models
 {
@@ -40,9 +41,8 @@ namespace MySearch.Models
         private CatalogEntrySearchCriteria CreateFullSearchCriteria(IContent currentContent, FilterOptionViewModel filterOptions)
         {
             CatalogEntrySearchCriteria criteria = new CatalogEntrySearchCriteria();
-            
-            var nodeContent = currentContent as NodeContent;
-            if (nodeContent != null)
+
+            if (currentContent is NodeContent nodeContent)
             {
                 criteria.CatalogName = nodeContent.Code;
             }

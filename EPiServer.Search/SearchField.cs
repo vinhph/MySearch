@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
 
-namespace MySearch.Models
+namespace EPiServer.Search
 {
     public class SearchField : ISearchField
     {

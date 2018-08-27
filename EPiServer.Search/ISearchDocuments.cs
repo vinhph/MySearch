@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MySearch.Models
+namespace EPiServer.Search
 {
     public interface ISearchDocuments : IList<ISearchDocument>, ICollection<ISearchDocument>, IEnumerable<ISearchDocument>, IEnumerable
     {

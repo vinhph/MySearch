@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MySearch.Models;
+﻿using EPiServer.Search;
 
-namespace MySearch.SearchProvider
+namespace OSG.Search
 {
     public class OSGSearchProvider : SearchProvider
     {

@@ -1,11 +1,4 @@
-﻿using MySearch.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MySearch.SearchProvider
+﻿namespace EPiServer.Search
 {
     public class SearchManager
     {
@@ -16,7 +9,7 @@ namespace MySearch.SearchProvider
         }
         public ISearchResults Search(ISearchCriteria criteria)
         {
-            return InternalSearchService.Search(this._applicationName, criteria);
+            return SearchService.Search(this._applicationName, criteria);
         }
     }
 }
