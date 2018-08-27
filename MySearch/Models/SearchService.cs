@@ -40,7 +40,7 @@ namespace MySearch.Models
         }
         private CatalogEntrySearchCriteria CreateFullSearchCriteria(IContent currentContent, FilterOptionViewModel filterOptions)
         {
-            CatalogEntrySearchCriteria criteria = new CatalogEntrySearchCriteria();
+            var criteria = new CatalogEntrySearchCriteria();
 
             if (currentContent is NodeContent nodeContent)
             {
